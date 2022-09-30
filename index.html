@@ -7,41 +7,105 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="multimedia/favicon.png" rel="icon" type="image/x-icon"/>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#" class="logo">Logo</a>
+        <nav class="navigation">
+            <div class="logo">
+                <a href="#">
+                    <img class="logopic" src="multimedia/home logo.png">
+                </a>
+            </div>
+            <!--<a href="#" class="logo">Logo</a>-->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rates">Rates</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="video-bg">
-            <video width="500" autoplay loop muted>
-                <source src="multimedia/satisfying anim0001-0250.mp4">
+            <video class="fondovid" width="500" autoplay loop muted>
+                <source src="multimedia/bgvideo.mp4">
             </video>
             <div class="titulo">
                 <h1>
                     <span>Hello, my</span>
-                    <span>name's Isaac.</span>
+                    <span>name's <span class="name">Isaac.</span></span>
                     <span>I'm a 3D Artist.</span>
                 </h1>
             </div>
         </div>
     </header>
-    <div class="banner">
+    <div class="works" id="works">
+        <div class="columncont">
+            <div class="cardcolumn">
+                <div class="wcards"><video class="workreel" width="30" autoplay loop muted>
+                    <source src="multimedia/satisfying anim0001-0250.mp4">
+                </video></div>
+                <div class="wcards">
+                    <video class="workreel" width="30" autoplay loop muted>
+                        <source src="multimedia/satisfying anim0001-0250.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="cardcolumn">
+                <div class="wcards">
+                    <video class="workreel" width="30" autoplay loop muted>
+                        <source src="multimedia/satisfying anim0001-0250.mp4">
+                    </video>
+                </div>
+                <div class="wcards">
+                    <video class="workreel" width="30" autoplay loop muted>
+                        <source src="multimedia/satisfying anim0001-0250.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="cardcolumn">
+                <div class="wcards">
+                    <video class="workreel" width="30" autoplay loop muted>
+                        <source src="multimedia/satisfying anim0001-0250.mp4">
+                    </video>
+                </div>
+                <div class="wcards">
+                    <video class="workreel" width="30" autoplay loop muted>
+                        <source src="multimedia/satisfying anim0001-0250.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="cardcolumn">
+                <div class="wcards">
+                    <video class="workreel" width="30" autoplay loop muted>
+                        <source src="multimedia/satisfying anim0001-0250.mp4">
+                    </video>
+                </div>
+                <div class="wcards">
+                    <video class="workreel" width="30" autoplay loop muted>
+                        <source src="multimedia/satisfying anim0001-0250.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="banner2">
+    <div class="about" id="about">
+    </div>
+    <div class="rates" id="rates">
+    </div>
+    <div class="contact" id="contact">
     </div>
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
             var nav = document.querySelector("nav")
-            nav.classList.toggle("sticky", window.scrollY > 1500);
+            nav.classList.toggle("sticky", window.scrollY > 1200);
+        })
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var h1 = document.querySelector("h1")
+            h1.classList.toggle("fade", window.scrollY > 1000);
         })
     </script>
 </body>
