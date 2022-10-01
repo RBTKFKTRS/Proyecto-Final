@@ -89,17 +89,35 @@ body{
     position: relative;
     margin-top: 100vh;
     width: 100%;
-    height: 65vmax;
+    height: 150vh;
     background-color: #feb931;
+}
+
+@media(max-width: 1800px){
+    .works{
+        height: 70vmax;
+    }
 }
 
 @media(max-width: 800px){
     .works{
-        height: 210vmax;
+        height: 200vmax;
+    }
+}
+
+@media(max-width: 750px){
+    .works{
+        height: 190vmax;
     }
 }
 
 @media(max-width: 700px){
+    .works{
+        height: 180vmax;
+    }
+}
+
+@media(max-width: 650px){
     .works{
         height: 170vmax;
     }
@@ -107,25 +125,49 @@ body{
 
 @media(max-width: 600px){
     .works{
-        height: 580vmax;
+        height: 550vmax;
+    }
+}
+
+@media(max-width: 550px){
+    .works{
+        height: 510vmax;
     }
 }
 
 @media(max-width: 500px){
     .works{
-        height: 490vmax;
+        height: 460vmax;
+    }
+}
+
+@media(max-width: 450px){
+    .works{
+        height: 420vmax;
     }
 }
 
 @media(max-width: 400px){
     .works{
-        height: 400vmax;
+        height: 380vmax;
+    }
+}
+
+@media(max-width: 350px){
+    .works{
+        height: 340vmax;
     }
 }
 
 @media(max-width: 300px){
     .works{
-        height: 310vmax;
+        height: 300vmax;
+    }
+}
+
+@media(max-width: 250px){
+    .works{
+        height: 260vmax;
     }
 }
 
@@ -151,17 +193,51 @@ body{
 
 .wcards{
     display: flex;
-    padding-bottom: 125%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 15%;
     width: 100%;
-    background-color: white;
+    background-color: #373535;
     border-radius: 15px;
     justify-content: center;
 }
 
 .workreel{
-    margin-top: 10%;
+    margin-top: 12%;
+    margin-left: auto;
+    margin-right: auto;
     width: 75%;
     border-radius: 10px;
+}
+
+.vcont{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.vcont > a{
+    color: #feb931;
+    text-decoration: none;
+    font-size: 1vw;
+    transition: 0.6s;
+}
+
+@media(max-width: 800px){
+    .vcont > a{
+        font-size: 2vw;
+    }
+}
+
+@media(max-width: 800px){
+    .vcont > a{
+        font-size: 4vw;
+    }
+}
+
+.vcont > a:hover{
+    color: #F8981D;
 }
 
 @media(max-width: 800px){
@@ -179,10 +255,68 @@ body{
 }
 
 .about{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     height: 100vh;
     background-color: #dddddd;
+}
+
+.aboutcolumn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50px;
+}
+
+.infocolumns{
+    flex: 33.33%;
+    max-width: 33.33%;
+}
+
+.rigtcolumn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #dddddd;
+    margin: auto;
+}
+
+.leftcolumn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #feb931;
+    margin: auto;
+}
+
+.profpic{
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: #F8981D;
+}
+
+.pic{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.info{
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 .rates{
@@ -223,8 +357,13 @@ body{
     text-shadow: 1px 1px 2px darkslategray;
 }
 
-span{
+.tspan{
     font-size: 10vh;
+}
+
+.proinfo{
+    text-align: center;
+    font-size: 3vw;
 }
 
 .name{
@@ -255,7 +394,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 1821px){
-    span{
+    .tspan{
         font-size: 9vh;
     }
     .name{
@@ -267,7 +406,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 1640px){
-    span{
+    .tspan{
         font-size: 8vh;
     }
     .name{
@@ -279,7 +418,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 1460px){
-    span{
+    .tspan{
         font-size: 7vh;
     }
     .name{
@@ -291,7 +430,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 1279px){
-    span{
+    .tspan{
         font-size: 6vh;
     }
     .name{
@@ -303,7 +442,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 1099px){
-    span{
+    .tspan{
         font-size: 5vh;
     }
     .name{
@@ -315,7 +454,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 919px){
-    span{
+    .tspan{
         font-size: 4.5vh;
     }
     .name{
@@ -327,7 +466,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 828px){
-    span{
+    .tspan{
         font-size: 4vh;
     }
     .name{
@@ -339,7 +478,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 738px){
-    span{
+    .tspan{
         font-size: 5vh;
     }
     .name{
@@ -351,7 +490,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 583px){
-    span{
+    .tspan{
         font-size: 4.5vh;
     }
     .name{
@@ -363,7 +502,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 525px){
-    span{
+    .tspan{
         font-size: 5.5vh;
     }
     .name{
@@ -375,7 +514,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 465px){
-    span{
+    .tspann{
         font-size: 5vh;
     }
     .name{
@@ -387,7 +526,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 423px){
-    span{
+    .tspan{
         font-size: 4.5vh;
     }
     .name{
@@ -399,7 +538,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 380px){
-    span{
+    .tspan{
         font-size: 4vh;
     }
     .name{
@@ -411,7 +550,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 337px){
-    span{
+    .tspan{
         font-size: 3.5vh;
     }
     .name{
@@ -423,7 +562,7 @@ h1.fade .name{
 }
 
 @media only screen and (max-width: 295px){
-    span{
+    .tspan{
         font-size: 3vh;
     }
     .name{
